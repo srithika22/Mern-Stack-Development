@@ -1,0 +1,111 @@
+/* #container > div{
+    height: 60px;
+    width: 60px;
+}
+/* 
+/* Parent Properties */
+
+#container > div:nth-child(1){
+    background-color: rgba(232, 6, 119, 0.93);
+    grid-area: b / c / e / c; /* row-start / column-start / row-end / column-end */
+}
+#container > div:nth-child(2){
+    background-color: rgba(18, 193, 237, 0.959);
+}  
+#container > div:nth-child(3){
+    background-color: rgba(255, 255, 0, 0.959);
+}
+#container > div:nth-child(4){
+    background-color: rgba(255, 0, 0, 0.959);
+}
+#container > div:nth-child(5){
+    background-color: rgba(0, 255, 0, 0.959);
+} 
+/* #container > div:nth-child(6){
+    background-color: rgba(0, 0, 255, 0.959);
+}
+#container > div:nth-child(7){
+    background-color: rgba(255, 0, 255, 0.959);
+}
+#container > div:nth-child(8){
+    background-color: rgba(0, 255, 255, 0.959);
+}
+#container > div:nth-child(9){
+    background-color: rgba(255, 165, 0, 0.959);
+} */
+
+
+/* .box{
+    height: 300px;
+    border: 4px solid rgb(15, 14, 14);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    align-items: center;
+    align-content: center;
+} */
+
+
+
+
+/* Child Properties */
+/* .box > div:nth-child(1) {
+  flex-grow:0;
+  flex-shrink:2;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid #ccc;
+} */
+
+/* 
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);  
+    grid-template-rows: 50px 50px ;
+    gap: 20px 50px;
+    grid-template-areas: 
+        "a b c"
+        "d e f";
+} */
+
+#container > div:nth-child(1){
+    background-color: chocolate;
+    grid-area: re;
+}
+#container > div:nth-child(2){
+    background-color:chartreuse;
+    grid-area: sa;
+}
+#container > div:nth-child(3){
+    background-color:fuchsia;
+    grid-area: or;
+}
+#container > div:nth-child(4){
+    background-color: darkgreen;
+}
+#container > div:nth-child(5){
+    background-color:rgb(0, 217, 255);
+    grid-area: sa;
+}
+#container > div:nth-child(6){
+    background-color:rgb(255, 242, 0);
+    grid-area: pl;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: 50px 50px;
+    /*row-gap: 20px;
+    column-gap: 20px;*/
+    gap: 20px 50px;
+    grid-template-areas: 
+    "re sa or"
+    "bl sa pl";
+    text-align: center;
+}

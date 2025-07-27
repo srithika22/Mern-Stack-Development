@@ -1,0 +1,30 @@
+.hp{
+    color:red;
+}
+#link{
+    color:blue;
+
+}
+*{
+    font-style:oblique;
+    color:crimson;
+}
+p{
+    color:darkmagenta;
+}
+div p{  
+    color:darksalmon;
+}
+div > p {  
+    color:darkviolet;
+}
+div ~ p , div ~ span { 
+    color:darkolivegreen;
+}
+div + p { 
+    color:lightseagreen;
+}
+section + span{ /* after closing section tag, the very next span */
+    color: darkgreen;
+}
+/* whatever you style in the last it will be applied and be more priortized */
