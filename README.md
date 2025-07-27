@@ -14,7 +14,7 @@ For every entry, you'll find its name, a direct link to its folder, and the main
 | Task No. | Task Name                   | Folder Link                       | Topics Involved            |
 |----------|-----------------------------|-----------------------------------|----------------------------|
 | Task 1   | Resume using HTML & CSS     | [Resume](Resume)  | CSS selectors, combinators |
-| Task 2   | <!-- Task name -->          | [Task 2](./path/to/task2-folder)  | <!-- E.g., Express Routing --> |
+| Task 2   | Keyboard, Calculator        | [Grid](Practice/Grid)  | CSS Grid, Flexbox |
 | Task 3   | <!-- Task name -->          | [Task 3](./path/to/task3-folder)  | <!-- E.g., MongoDB CRUD -->    |
 | ...      | ...                         | ...                              | ...                        |
 
