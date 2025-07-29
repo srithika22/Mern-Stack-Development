@@ -1,0 +1,41 @@
+html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Positions</title>
+    <style>
+      div:nth-child(1) {
+        background-color: teal;
+      }
+      div:nth-child(2) {
+        background-color: pink;
+      }
+      div:nth-child(3) {
+        background-color: brown;
+      }
+
+      div {
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+        font-size: 20px;
+      }
+      #teal {
+        background-color: teal;
+        position: absolute;
+        left: 200px;
+      }
+      #pink {
+        background-color: pink;
+      }
+      #brown {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Change position values to static/relative/absolute</h2>
+    <div id="teal">Box-1</div>
+    <div id="pink">Box-2</div>
+    <div id="brown">Box-3</div>
+  </body>
+</html>
