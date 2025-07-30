@@ -6,15 +6,15 @@ I update this README regularly to reflect new skills, accomplishments, and resou
 
 ---
 
-## 🗂️ Task & Project Tracker
+## 🗂️ WeeklyTasks & Project Tracker
 
 A table summarizing each task, homework, or project I've completed.  
 For every entry, you'll find its name, a direct link to its folder, and the main topics involved.
 
 | Task No. | Task Name                   | Folder Link                       | Topics Involved            |
 |----------|-----------------------------|-----------------------------------|----------------------------|
-| Task 1   | Resume using HTML & CSS     | [Resume](Resume)  | CSS selectors, combinators |
-| Task 2   | Keyboard, Calculator        | [Grid](Practice/Grid)  | CSS Grid, Flexbox |
+| Task 1   | Resume using HTML & CSS     | [Resume](WeeklyTasks/Task1-Resume)  | CSS selectors, combinators |
+| Task 2   | Keyboard, Calculator using Grid and flexbox      | [Keyboard](Practice/Grid/Keyboard.html) , [Calculator](WeeklyTasks/Task2-Calculator)  | CSS Grid, Flexbox |
 | Task 3   | <!-- Task name -->          | [Task 3](./path/to/task3-folder)  | <!-- E.g., MongoDB CRUD -->    |
 | ...      | ...                         | ...                              | ...                        |
 
