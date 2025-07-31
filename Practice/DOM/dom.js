@@ -1,21 +1,21 @@
-function name() {
-    console.log("DOM Practice");
-}
-name();
+// function name() {
+//     console.log("DOM Practice");
+// }
+// name();
 
-let b = function() {
-    console.log("This is a function expression");
-}
-b();
+// let b = function() {
+//     console.log("This is a function expression");
+// }
+// b();
 
-let c = () => {
-    console.log("This is an arrow function");
-}
-c();
-var Persons = ["John", "Jane", "Doe"];
-let v = Persons.map((element) => {
-    console.log(element);
-});
+// let c = () => {
+//     console.log("This is an arrow function");
+// }
+// c();
+// var Persons = ["John", "Jane", "Doe"];
+// let v = Persons.map((element) => {
+//     console.log(element);
+// });
 
 
 // console.log("hi");
@@ -42,7 +42,7 @@ let v = Persons.map((element) => {
 
 // arrow();
 
-var persons = ['Chandra', 'Varun', 'Nrupul', 'Prateek', 'Aman'];
+// var persons = ['Chandra', 'Varun', 'Nrupul', 'Prateek', 'Aman'];
 
 // function vaccinate(person) { 
 //     console.log(person + 'has been vaccinated.')
@@ -92,9 +92,27 @@ var persons = ['Chandra', 'Varun', 'Nrupul', 'Prateek', 'Aman'];
 
 
 
-console.log(document.title);
-console.log(document.URL);
-console.log(document.body); 
-console.log(document.head);
-console.log(document.getElementsByTagName("p"));
-console.log(document.getElementById("container"));
+// console.log(document.title);
+// console.log(document.URL);
+// console.log(document.body); 
+// console.log(document.head);
+// console.log(document.getElementsByTagName("p"));
+// console.log(document.getElementById("container"));
+// let text = document.querySelector("#container").innerHTML;
+// text.innerHtml = "Updated Content";
+// console.log(text);
+// console.log(document.querySelectorAll(".container"));
+
+
+
+function catchValue(){
+    let username = document.querySelector("input");
+   console.log( username.value);
+}
+
+function getGender(){
+    let genderSelect = document.getElementById("getGender");
+    let selectedGender = genderSelect.value;
+    console.log("Selected gender:", selectedGender);
+    
+}
