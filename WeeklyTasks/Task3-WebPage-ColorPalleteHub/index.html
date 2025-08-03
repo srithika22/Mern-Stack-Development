@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ColorPaletteHub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f7f7f7;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card {
+      width: 220px;
+      height: 260px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .color {
+        flex: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        transition: transform 0.2s ease;
+    }
+
+    .color span {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6px 12px;
+    border-radius: 6px;
+    opacity: 0;
+    }
+
+    .color:hover span {
+    opacity: 1;
+    }
+
+    .palette-1 .color:nth-child(1) { background: #e5eedc; }
+    .palette-1 .color:nth-child(2) { background: #ba5a46; }
+    .palette-1 .color:nth-child(3) { background: #f19255; }
+    .palette-1 .color:nth-child(4) { background: #fff7e9; }
+
+    .palette-2 .color:nth-child(1) { background: #f6f0d6; }
+    .palette-2 .color:nth-child(2) { background: #facd9d; }
+    .palette-2 .color:nth-child(3) { background: #6b9a8f; }
+    .palette-2 .color:nth-child(4) { background: #2c093a; }
+
+    .palette-3 .color:nth-child(1) { background: #7de0a1; }
+    .palette-3 .color:nth-child(2) { background: #259ca6; }
+    .palette-3 .color:nth-child(3) { background: #f3efbb; }
+    .palette-3 .color:nth-child(4) { background: #e3b235; }
+
+    .palette-4 .color:nth-child(1) { background: #91a928; }
+    .palette-4 .color:nth-child(2) { background: #e2e9d1; }
+    .palette-4 .color:nth-child(3) { background: #fffcf3; }
+    .palette-4 .color:nth-child(4) { background: #ffaa00; }
+
+    .palette-5 .color:nth-child(1) { background: #393c2d; }
+    .palette-5 .color:nth-child(2) { background: #7b8d88; }
+    .palette-5 .color:nth-child(3) { background: #c3b199; }
+    .palette-5 .color:nth-child(4) { background: #f5f4ea; }
+
+    .palette-6 .color:nth-child(1) { background: #131b7a; }
+    .palette-6 .color:nth-child(2) { background: #3c32a8; }
+    .palette-6 .color:nth-child(3) { background: #7f84c2; }
+    .palette-6 .color:nth-child(4) { background: #b6b9f5; }
+
+    .palette-7 .color:nth-child(1) { background: #f6e8df; }
+    .palette-7 .color:nth-child(2) { background: #c8b1cf; }
+    .palette-7 .color:nth-child(3) { background: #3e4b59; }
+    .palette-7 .color:nth-child(4) { background: #0b1e27; }
+
+    .palette-8 .color:nth-child(1) { background: #b93058; }
+    .palette-8 .color:nth-child(2) { background: #d25d5d; }
+    .palette-8 .color:nth-child(3) { background: #eedddc; }
+    .palette-8 .color:nth-child(4) { background: #f4f4f4; }
+
+    .palette-9 .color:nth-child(1) { background: #000814; }
+    .palette-9 .color:nth-child(2) { background: #001d3d; }
+    .palette-9 .color:nth-child(3) { background: #003566; }
+    .palette-9 .color:nth-child(4) { background: #ffc300; }
+
+    .palette-10 .color:nth-child(1) { background: #2c2c54; }
+    .palette-10 .color:nth-child(2) { background: #474787; }
+    .palette-10 .color:nth-child(3) { background: #aaabb8; }
+    .palette-10 .color:nth-child(4) { background: #e0e0e0; }
+
+    .palette-11 .color:nth-child(1) { background: #6a0572; }
+    .palette-11 .color:nth-child(2) { background: #ab83a1; }
+    .palette-11 .color:nth-child(3) { background: #f7d1cd; }
+    .palette-11 .color:nth-child(4) { background: #fef6f6; }
+
+    .palette-12 .color:nth-child(1) { background: #0f4c75; }
+    .palette-12 .color:nth-child(2) { background: #3282b8; }
+    .palette-12 .color:nth-child(3) { background: #bbe1fa; }
+    .palette-12 .color:nth-child(4) { background: #ffffff; }
+  </style>
+</head>
+<body>
+
+  <h1>ColorPaletteHub 🎨</h1>
+
+  <div class="container">
+
+    <div class="card palette-1">
+      <div class="color"><span>#e5eedc</span></div>
+      <div class="color"><span>#ba5a46</span></div>
+      <div class="color"><span>#f19255</span></div>
+      <div class="color"><span>#fff7e9</span></div>
+    </div>
+
+    <div class="card palette-2">
+      <div class="color"><span>#f6f0d6</span></div>
+      <div class="color"><span>#facd9d</span></div>
+      <div class="color"><span>#6b9a8f</span></div>
+      <div class="color"><span>#2c093a</span></div>
+    </div>
+
+    <div class="card palette-3">
+      <div class="color"><span>#7de0a1</span></div>
+      <div class="color"><span>#259ca6</span></div>
+      <div class="color"><span>#f3efbb</span></div>
+      <div class="color"><span>#e3b235</span></div>
+    </div>
+
+    <div class="card palette-4">
+      <div class="color"><span>#91a928</span></div>
+      <div class="color"><span>#e2e9d1</span></div>
+      <div class="color"><span>#fffcf3</span></div>
+      <div class="color"><span>#ffaa00</span></div>
+    </div>
+
+    <div class="card palette-5">
+      <div class="color"><span>#393c2d</span></div>
+      <div class="color"><span>#7b8d88</span></div>
+      <div class="color"><span>#c3b199</span></div>
+      <div class="color"><span>#f5f4ea</span></div>
+    </div>
+
+    <div class="card palette-6">
+      <div class="color"><span>#131b7a</span></div>
+      <div class="color"><span>#3c32a8</span></div>
+      <div class="color"><span>#7f84c2</span></div>
+      <div class="color"><span>#b6b9f5</span></div>
+    </div>
+
+    <div class="card palette-7">
+      <div class="color"><span>#f6e8df</span></div>
+      <div class="color"><span>#c8b1cf</span></div>
+      <div class="color"><span>#3e4b59</span></div>
+      <div class="color"><span>#0b1e27</span></div>
+    </div>
+
+    <div class="card palette-8">
+      <div class="color"><span>#b93058</span></div>
+      <div class="color"><span>#d25d5d</span></div>
+      <div class="color"><span>#eedddc</span></div>
+      <div class="color"><span>#f4f4f4</span></div>
+    </div>
+
+    <div class="card palette-9">
+      <div class="color"><span>#000814</span></div>
+      <div class="color"><span>#001d3d</span></div>
+      <div class="color"><span>#003566</span></div>
+      <div class="color"><span>#ffc300</span></div>
+    </div>
+
+    <div class="card palette-10">
+      <div class="color"><span>#2c2c54</span></div>
+      <div class="color"><span>#474787</span></div>
+      <div class="color"><span>#aaabb8</span></div>
+      <div class="color"><span>#e0e0e0</span></div>
+    </div>
+
+    <div class="card palette-11">
+      <div class="color"><span>#6a0572</span></div>
+      <div class="color"><span>#ab83a1</span></div>
+      <div class="color"><span>#f7d1cd</span></div>
+      <div class="color"><span>#fef6f6</span></div>
+    </div>
+
+    <div class="card palette-12">
+      <div class="color"><span>#0f4c75</span></div>
+      <div class="color"><span>#3282b8</span></div>
+      <div class="color"><span>#bbe1fa</span></div>
+      <div class="color"><span>#ffffff</span></div>
+    </div>
+  </div>
+
+  <script>
+    const colors = document.querySelectorAll('.color');
+    colors.forEach(div => {
+      div.addEventListener('click', () => {
+        const hex = div.innerText.trim();
+        navigator.clipboard.writeText(hex).then(() => {
+          div.querySelector('span').innerText = "Copied!";
+          setTimeout(() => {
+            div.querySelector('span').innerText = hex;
+          }, 1000);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
