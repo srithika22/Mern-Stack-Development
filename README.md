@@ -14,7 +14,7 @@ For every entry, you'll find its name, a direct link to its folder, and the main
 | Task No. | Task Name                   | Folder Link                       | Topics Involved            |
 |----------|-----------------------------|-----------------------------------|----------------------------|
 | Task 1   | Resume using HTML & CSS     | [Resume](WeeklyTasks/Task1-Resume)  | CSS selectors, combinators |
-| Task 2   | Keyboard, Calculator using Grid and flexbox      | [Keyboard](Practice/Grid/Keyboard.html) , [Calculator](WeeklyTasks/Task2-Calculator)  | CSS Grid, Flexbox |
+| Task 2   | Keyboard, Calculator using Grid and flexbox      |  [Calculator&keyboard](WeeklyTasks/Task2-Keyboard,Calculator)  | CSS Grid, Flexbox |
 | Task 3   | ColorPalleteHub web page        | [Web Page](WeeklyTasks/Task3-WebPage-ColorPalleteHub)  | <!-- E.g., MongoDB CRUD -->    |
 | ...      | ...                         | ...                              | ...                        |
 
