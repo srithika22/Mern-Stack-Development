@@ -15,7 +15,7 @@ For every entry, you'll find its name, a direct link to its folder, and the main
 |----------|-----------------------------|-----------------------------------|----------------------------|
 | Task 1   | Resume using HTML & CSS     | [Resume](WeeklyTasks/Task1-Resume)  | CSS selectors, combinators |
 | Task 2   | Keyboard, Calculator using Grid and flexbox      | [Keyboard](Practice/Grid/Keyboard.html) , [Calculator](WeeklyTasks/Task2-Calculator)  | CSS Grid, Flexbox |
-| Task 3   | <!-- Task name -->          | [Task 3](./path/to/task3-folder)  | <!-- E.g., MongoDB CRUD -->    |
+| Task 3   | ColorPalleteHub web page        | [Web Page](WeeklyTasks/Task3-WebPage-ColorPalleteHub)  | <!-- E.g., MongoDB CRUD -->    |
 | ...      | ...                         | ...                              | ...                        |
 
 ---
@@ -24,8 +24,8 @@ For every entry, you'll find its name, a direct link to its folder, and the main
 
 | Week | Goals                                            | Progress & Projects                          |
 |------|--------------------------------------------------|----------------------------------------------|
-| 1    | Learn CSS selectors, combinators, flexbox & grid | 🟡 In Progress <br>**Project:** Resume with advanced CSS |
-| 2    |                           | ⏳ Planned     |
+| 1    | Learn CSS selectors, combinators, flexbox & grid | ✅ Completed <br>**Project:** Resume, Calculator and keyboard and webpage |
+| 2    | Practice Grid, flexbox and Learn about DOM in js and events                         | 🟡 In Progress - Learning js concepts   |
 | 3    |                    | ⏳ Planned                                   |
 | 4    |          | ⏳ Planned                                   |
 | 5    |                      | ⏳ Planned                                   |
